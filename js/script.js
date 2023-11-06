@@ -55,7 +55,7 @@ let ourTeamPrint = "";
 
 for (let i = 0; i < ourTeam.length; i++) {
   const person = ourTeam[i];
-  ourTeamPrint += `<div class="card col-3">
+  ourTeamPrint += `<div class="card col-3 p-0">
   <img src="img/${person.photo}" class="img-top" alt="..." />
   <div class="card-body text-center">
     <p class="name">${person.name}</p>
