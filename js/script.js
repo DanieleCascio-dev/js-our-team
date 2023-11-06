@@ -47,6 +47,13 @@ console.log(barbara);
 const ourTeam = [wayne, angela, walter, lopez, scott, barbara];
 console.log(ourTeam);
 
+for (let i = 0; i < ourTeam.length; i++) {
+  const element = ourTeam[i];
+  for (const key in element) {
+    console.log(key, element[key]);
+  }
+}
+
 /* ********************************** */
 /* FUNCTION */
 
