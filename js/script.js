@@ -1,3 +1,5 @@
+//Create 6 object
+
 const wayne = newObject(
   "Wayne Barnett",
   "Founder & CEO",
@@ -39,9 +41,16 @@ const barbara = newObject(
   "barbara-ramos-graphic-designer.jpg"
 );
 console.log(barbara);
+
+//Create array with object
+
+const ourTeam = [wayne, angela, walter, lopez, scott, barbara];
+console.log(ourTeam);
+
 /* ********************************** */
 /* FUNCTION */
 
+//Create an object with 3 keywords
 function newObject(newName, newRole, newPhoto) {
   const newObject = {
     name: newName,
