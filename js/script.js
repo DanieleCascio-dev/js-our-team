@@ -47,12 +47,24 @@ console.log(barbara);
 const ourTeam = [wayne, angela, walter, lopez, scott, barbara];
 console.log(ourTeam);
 
+//print in html
+const rowElem = document.querySelector(".row");
+console.log(rowElem);
+
+let ourTeamPrint = "";
+
 for (let i = 0; i < ourTeam.length; i++) {
-  const element = ourTeam[i];
-  for (const key in element) {
-    console.log(key, element[key]);
-  }
+  const person = ourTeam[i];
+  ourTeamPrint += `<div class="card col-3">
+  <img src="img/${person.photo}" class="img-top" alt="..." />
+  <div class="card-body text-center">
+    <p class="name">${person.name}</p>
+    <p class="role">${person.role}</p>
+  </div>
+</div>`;
 }
+
+rowElem.innerHTML = ourTeamPrint;
 
 /* ********************************** */
 /* FUNCTION */
